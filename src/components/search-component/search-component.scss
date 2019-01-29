@@ -1,20 +1,25 @@
 .search {
   input[type="search"] {
-    padding: 1rem 2rem;
-    width: 100%;
+    width: 100vw;
+    margin-bottom: 1rem;
+    padding: 1rem;
     font-size: 1rem;
-    background-color: #f7f7f7;
     border: 0;
-    transition: all .4s ease-in-out;
+    background-color: #F4F4F4;
+    color: #4D4D4D;
+    transition: .25s all ease;
 
     &:focus {
-      background-color: #e0e0e0;
+      background-color: #efefef;
       outline: 0;
+    }
+
+    &::placeholder {
+      color: #979797;
     }
   }
 
   .hits {
     padding: .5rem 1rem;
-    font-size: 100px;
   }
 }

@@ -13,12 +13,10 @@ import '@stencil/core';
 export namespace Components {
 
   interface ResultComponent {
-    'name': string;
-    'url': string;
+    'result': any;
   }
   interface ResultComponentAttributes extends StencilHTMLAttributes {
-    'name'?: string;
-    'url'?: string;
+    'result'?: any;
   }
 
   interface SearchComponent {

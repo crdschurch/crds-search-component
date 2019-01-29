@@ -42,7 +42,7 @@ export class SearchComponent {
           {this.results.length === 0 && this.value !== ''
             ? <p>No results found</p>
             : this.results.map((result) => {
-              return(<result-component url={result.url} name={result.title}></result-component>);
+              return(<result-component result={result}></result-component>);
             })
           }
         </div>
